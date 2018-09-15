@@ -1,0 +1,7 @@
+<form class='' method='POST' action="{% if action_url %}{{ action_url }}{% endif %}">
+   {% csrf_token %}
+    {{ form }}
+    <br>
+    <input class='btn btn-primary' type="submit" value="{{ btn_title }}" />
+    <br>
+</form>

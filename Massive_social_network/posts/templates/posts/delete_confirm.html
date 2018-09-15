@@ -1,0 +1,16 @@
+{% extends "posts/base.html" %}
+
+
+{% block content %}
+
+
+
+
+<form action="" method="post">
+    {% csrf_token %}
+    <p>Are You Sure You Want To Delete This Post"{{ object }}"?</p>
+    <input type="submit" value="Confirm" />
+</form>
+
+
+{% endblock content %}

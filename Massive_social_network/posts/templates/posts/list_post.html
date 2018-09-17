@@ -26,10 +26,10 @@
 
 
   <div class="container">
+{# {% include "posts/search_form.html" %} #}
 
 {% include "posts/form.html" with form=create_form action_url=create_url btn_title='Tweet' form_class='form-control' %}
 <hr>
-
 
   {% for post in post_list %}
 

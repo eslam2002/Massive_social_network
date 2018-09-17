@@ -11,10 +11,15 @@
                {% endif %}
         </div>
         <div class='col-sm-9 '>
-          <h1>Posts</h1>
-          <hr/>
-
-          <div>
+          <h1>Tweets</h1>
+          <hr>
+{% for post in posts %}
+  {{ post }}
+  <br>
+  <br>
+{% endfor %}
+<br>
+        </div>
         <div class='col-sm-3'>
           <h1>Users</h1>
            <hr/>

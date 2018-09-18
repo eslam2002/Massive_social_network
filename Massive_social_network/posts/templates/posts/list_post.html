@@ -40,11 +40,13 @@
       <div class="card">
         {# <img class="card-img-top" src=".../100px180/" alt="Card image cap"> #}
         <div class="card-body">
-          <h5 class="card-title">{{ post.user }}</h5>
-          <p class="card-text">{{ post.content }}</p>
+          <h5 class="card-title">{{ post.content }}</h5>
         </div>
         <div class="card-footer">
-          <small class="text-muted">{{ post.timeposted | timesince }} ago</small>
+          <p>
+          Via : <a href='/{{ user.username}}/'><p class="card-text">{{ post.user }}</p></a> | At : <small class="text-muted">{{ post.timeposted | timesince }} ago</small> | <a href='{% url "post:post_detail" pk=9 %}'>View</a>
+          </p>
+
         </div>
       </div>
 </div>

@@ -43,9 +43,9 @@ class PostDeleteView(LoginRequiredMixin, DeleteView):
 
 #
 #
-# class PostDetailView(DetailView):
-#     queryset = Post.objects.all()
-
+class PostDetailView(DetailView):
+    queryset = Post.objects.all()
+    template_name = 'posts/post_detail.html'
 
 class PostListView(ListView):
 
